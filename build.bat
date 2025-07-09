@@ -1,6 +1,7 @@
 @echo off
 
 mkdir bin
+copy external\SDL3\lib\x64\SDL3.dll bin\
 
 cls
 pushd bin
