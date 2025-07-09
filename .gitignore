@@ -1,5 +1,1 @@
-bin
-bin/*.obj
-bin/*.exe
-bin/*.pdb
-bin/*.ilk
+bin/*
