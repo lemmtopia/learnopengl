@@ -1,11 +1,12 @@
+// Library includes
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include <glad/glad.h>
-
 #include <stdlib.h>
 
 #include "external/glad/glad.c"
 
+// Custom file includes
 #include "learn_opengl.h"
 #include "my_assert.h"
 #include "sdl3_window.h"

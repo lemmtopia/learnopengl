@@ -1,8 +1,11 @@
 #include "sdl3_window.h"
-#include <SDL3/SDL.h>
 
 globalvar SDL_Window* window;
 globalvar SDL_GLContext gl_context;
+
+void set_gl_attributes(void) {
+
+}
 
 void initialize_window(void) {
     // Maybe add more init flags?
@@ -17,6 +20,8 @@ void initialize_window(void) {
     if (!window) {
 	panic_and_abort("SDL_CreateWindow failed!", SDL_GetError());
     }
+
+    set_gl_attributes();
 }
 
 void destroy_window(void) {
