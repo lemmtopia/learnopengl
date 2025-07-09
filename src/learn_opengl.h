@@ -32,4 +32,7 @@ typedef double float64;
 
 #define FPS 60
 
+// Utils
+void panic_and_abort(const char* title, const char* message);
+
 #endif
