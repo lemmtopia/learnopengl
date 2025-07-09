@@ -7,15 +7,15 @@
 
 // Defining _debugBreak
 #ifdef _MSC_VER
-#define _debugBreak() __debugbreak()
+#define debug_break() __debugbreak()
 #endif
 
 // Check the expression and fails if it is false.
 #define MY_ASSERT(expr) \
     if (expr) { }	\
     else { \
-	ReportAssertionFailure(#expr, __FILE__, __LINE__); \
-	_debugBreak();					\
+	report_assertion_failure(#expr, __FILE__, __LINE__); \
+	debug_break();					\
     }
 
 #else

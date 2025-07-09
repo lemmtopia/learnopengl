@@ -26,6 +26,7 @@ typedef float float32;
 typedef double float64;
 
 // Game defines
+#define TITLE "Learn OpenGL"
 #define WIDTH 800
 #define HEIGHT 600
 

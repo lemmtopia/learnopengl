@@ -3,7 +3,7 @@
 #include <SDL3/SDL_messagebox.h>
 #include <stdio.h>
 
-void ReportAssertionFailure(const char* expr, const char* file, int line) {
+void report_assertion_failure(const char* expr, const char* file, int line) {
     char message[MESSAGE_SIZE];
 
     sprintf_s(
